@@ -7,6 +7,7 @@ class CustomgDocument extends Document {
         <Head>
           <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />
