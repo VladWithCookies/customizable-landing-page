@@ -2,16 +2,30 @@ $orange-500: #FCBB08;
 
 $gray-900: #242121;
 $gray-850: #1D1D1D;
+$gray-825: #333333;
 $gray-800: #373A39;
+$gray-300: #777777;
 $gray-150: #F0F0F0;
 $gray-100: #F6F8FA;
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: $gray-800;
 }
 
 h1, body {
   margin: 0;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
 }
 
 .logo {
@@ -30,35 +44,36 @@ h1, body {
   justify-content: space-between;
   align-items: center;
   padding: 0 52px;
+  font-family: 'Raleway', sans-serif;
 }
 
-.main-navigation__items {
+.main-navigation__menu {
   display: flex;
   list-style-type: none;
 }
 
-.navigation-item {
+.main-navigation__menu-item {
   margin-left: 50px;
 
   a {
     padding: 9px;
-
     color: $gray-800;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 14px;
     font-size: 12px;
     letter-spacing: 0.6px;
     text-decoration: none;
 
-    &:hover {
-      border-bottom: 2px solid $orange-500;
-    }
-
     &:focus {
       border: 2px solid $orange-500;
     }
   }
+}
+
+.main-navigation__menu-item:hover,
+.main-navigation__menu-item--active {
+  border-bottom: 2px solid $orange-500;
 }
 
 .hero {
@@ -72,9 +87,8 @@ h1, body {
 
 .hero__header {
   margin-top: 213px;
-
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 122px;
   font-size: 100px;
   text-transform: uppercase;
@@ -83,11 +97,10 @@ h1, body {
 
 .hero__subtitle {
   margin-top: 18.5px;
-
   font-family: 'Montserrat', sans-serif;
   color: $orange-500;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
 }
 
@@ -96,7 +109,7 @@ h1, body {
   height: 43px;
   border: 2px solid white;
   border-radius: 100px;
-  margin-top: 179.5px;
+  margin-top: 180px;
   display: flex;
   justify-content: center;
 }
@@ -113,7 +126,12 @@ h1, body {
   display: flex;
   background-color: $gray-100;
   min-height: 491px;
-  padding: 0 135px;
+  padding: 0 135px 159px 135px;
+}
+
+.about-us__header {
+  width: 267px;
+  padding-top: 143px;
 }
 
 .about-us__content {
@@ -122,25 +140,25 @@ h1, body {
 }
 
 .main-header {
-  width: 267px;
-  margin-top: 143px;
-  margin-bottom: 14px;
-
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 60px;
   line-height: 75px;
   color: $gray-900;
   letter-spacing: -1.65px;
   white-space: nowrap;
-}
+  position: relative;
+  margin: 0;
 
-.main-text {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
-  color: $gray-800;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    display: block;
+    background-color: $orange-500;
+    width: 60px;
+    height: 4px;
+  }
 }
 
 .header-underline {
@@ -150,8 +168,12 @@ h1, body {
 }
 
 .our-expertise {
-  padding: 0 135px;
+  padding: 0 135px 164px 135px;
   min-height: 877px;
+}
+
+.our-expertise__header {
+  padding-top: 143px;
 }
 
 .our-expertise__content {
@@ -159,32 +181,30 @@ h1, body {
   display: flex;
 }
 
-.stats {
+.our-expertise__stats {
   min-width: 370px;
 }
 
-.chart {
+.progress {
   margin-bottom: 28px;
   padding-top: 9px;
-
-  font-family: 'Open Sans';
   font-size: 11px;
   line-height: 20px;
   letter-spacing: 1px;
   color: $gray-850;
 }
 
-.chart__line {
+.progress__line {
   height: 2px;
   background-color: $gray-150;
 }
 
-.line-progress {
+.progress__value {
   height: 100%;
   background-color: $gray-850;
 }
 
-.line-progress__value {
+.progress__label {
   position: relative;
   left: calc(100% - 8px);
 }
@@ -193,15 +213,60 @@ h1, body {
   text-transform: uppercase;
 }
 
-.chart__legend {
+.progress__legend {
   display: flex;
   justify-content: space-between;
 }
 
-.expertise-description {
+.our-expertise__description {
   margin-left: 30px;
 }
 
-.expertise-description__lead {
-  margin-top: 0;
+.our-expertise__services {
+  margin-top: 110px;
+  display: flex;
+  padding: 0 3px;
+}
+
+.our-expertise__services-item {
+  display: flex;
+  margin-right: 27px;
+}
+
+.our-expertise__services-item-icon {
+  margin-right:  35px;
+}
+
+.our-expertise__services-item-header {
+  font-family: Raleway;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 4.29px;
+  text-transform: uppercase;
+  color: $gray-825;
+}
+
+.our-expertise__services-item-description {
+  color: $gray-300;
+  margin-top: 18px;
+}
+
+.vision {
+  display: flex;
+  background: $gray-100;
+  max-height: 840px;
+}
+
+.vision__image {
+  width: 50%;
+  object-fit: cover;
+}
+
+.vision__content {
+  width: 50%;
+  padding: 101px 135px 180px 130px;
+}
+
+.vision__description {
+  margin-top: 67px;
 }
