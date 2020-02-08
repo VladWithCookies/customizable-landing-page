@@ -183,7 +183,7 @@ const Index = () => (
       </div>
     </section>
     <section className="vision">
-      <img className="vision__image" src="https://picsum.photos/900" />
+      <img className="vision__image" src="https://picsum.photos/1200" />
       <div className="vision__content">
         <h2 className="main-header">
           Let’s make
@@ -204,6 +204,139 @@ const Index = () => (
            sapiente dolores, ad libero! Tenetur provident, omnis.
         </p>
       </div>
+    </section>
+    <section className="portfolio">
+      <div className="portfolio__navigation">
+        <h1 className="main-header">
+          Portfolio
+        </h1>
+        <ul className="portfolio__navigation-menu">
+          <li className="portfolio__navigation-menu-item portfolio__navigation-menu-item--active">
+            <a href="#">
+              All
+            </a>
+          </li>
+          <li className="portfolio__navigation-menu-item">
+            <a href="#">
+              Branding
+            </a>
+          </li>
+          <li className="portfolio__navigation-menu-item">
+            <a href="#">
+              Photography
+            </a>
+          </li>
+          <li className="portfolio__navigation-menu-item">
+            <a href="#">
+              Illustration
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="gallery">
+        <div className="gallery__image gallery__image--7x">
+          <img src="https://picsum.photos/900" />
+          <a href="#" className="gallery__image-info">
+            <p className="gallery__image-caption">
+              Ocaa cupidatat
+            </p>
+            <p className="gallery__image-category">
+              Design
+            </p>
+          </a>
+        </div>
+        <div className="gallery__image gallery__image--4x">
+          <img src="https://picsum.photos/910" />
+          <a href="#" className="gallery__image-info">
+            <p className="gallery__image-caption">
+              Ocaa cupidatat
+            </p>
+            <p className="gallery__image-category">
+              Design
+            </p>
+          </a>
+        </div>
+        <div className="gallery__image gallery__image--5x">
+          <img src="https://picsum.photos/920" />
+          <a href="#" className="gallery__image-info">
+            <p className="gallery__image-caption">
+              Ocaa cupidatat
+            </p>
+            <p className="gallery__image-category">
+              Design
+            </p>
+          </a>
+        </div>
+        <div className="gallery__image gallery__image--4x">
+          <img src="https://picsum.photos/930" />
+          <a href="#" className="gallery__image-info">
+            <p className="gallery__image-caption">
+              Ocaa cupidatat
+            </p>
+            <p className="gallery__image-category">
+              Design
+            </p>
+          </a>
+        </div>
+        <div className="gallery__image gallery__image--4x">
+          <img src="https://picsum.photos/940" />
+          <a href="#" className="gallery__image-info">
+            <p className="gallery__image-caption">
+              Ocaa cupidatat
+            </p>
+            <p className="gallery__image-category">
+              Design
+            </p>
+          </a>
+        </div>
+        <div className="gallery__image gallery__image--8x">
+          <img src="https://picsum.photos/950" />
+          <a href="#" className="gallery__image-info">
+            <p className="gallery__image-caption">
+              Ocaa cupidatat
+            </p>
+            <p className="gallery__image-category">
+              Design
+            </p>
+          </a>
+        </div>
+        <div className="gallery__image gallery__image--7x">
+          <img src="https://picsum.photos/960" />
+          <a href="#" className="gallery__image-info">
+            <p className="gallery__image-caption">
+              Ocaa cupidatat
+            </p>
+            <p className="gallery__image-category">
+              Design
+            </p>
+          </a>
+        </div>
+        <div className="gallery__image gallery__image--5x">
+          <img src="https://picsum.photos/970" />
+          <a href="#" className="gallery__image-info">
+            <p className="gallery__image-caption">
+              Ocaa cupidatat
+            </p>
+            <p className="gallery__image-category">
+              Design
+            </p>
+          </a>
+        </div>
+        <div className="gallery__image gallery__image--4x">
+          <img src="https://picsum.photos/980" />
+          <a href="#" className="gallery__image-info">
+            <p className="gallery__image-caption">
+              Ocaa cupidatat
+            </p>
+            <p className="gallery__image-category">
+              Design
+            </p>
+          </a>
+        </div>
+      </div>
+      <button className="portfolio__show-more-button">
+        View more projects
+      </button>
     </section>
   </>
 );

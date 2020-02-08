@@ -1,0 +1,8 @@
+.logo {
+  height: 42px;
+  object-fit: contain;
+
+  &:focus {
+    border: 2px solid $orange-500;
+  }
+}

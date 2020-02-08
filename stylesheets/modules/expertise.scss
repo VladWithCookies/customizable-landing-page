@@ -1,0 +1,50 @@
+.our-expertise {
+  padding: 0 135px 164px 135px;
+  min-height: 877px;
+}
+
+.our-expertise__header {
+  padding-top: 143px;
+}
+
+.our-expertise__content {
+  margin-top: 89px;
+  display: flex;
+}
+
+.our-expertise__stats {
+  min-width: 370px;
+}
+
+.our-expertise__description {
+  margin-left: 30px;
+}
+
+.our-expertise__services {
+  margin-top: 110px;
+  display: flex;
+  padding: 0 3px;
+}
+
+.our-expertise__services-item {
+  display: flex;
+  margin-right: 27px;
+}
+
+.our-expertise__services-item-icon {
+  margin-right:  35px;
+}
+
+.our-expertise__services-item-header {
+  font-family: Raleway;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 4.29px;
+  text-transform: uppercase;
+  color: $gray-825;
+}
+
+.our-expertise__services-item-description {
+  color: $gray-300;
+  margin-top: 18px;
+}
