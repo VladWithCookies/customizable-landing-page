@@ -8,6 +8,7 @@ class CustomgDocument extends Document {
           <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />
