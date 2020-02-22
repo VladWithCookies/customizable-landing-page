@@ -12,11 +12,12 @@
   display: flex;
   flex-direction: column;
   padding: 114px 95px;
-  min-height: 736px;
+  min-height: 612px;
   justify-content: space-between;
 }
 
 .carousel__control {
+  cursor: pointer;
   height: 36px;
   border-style: none;
   background-color: transparent;

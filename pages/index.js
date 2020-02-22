@@ -9,33 +9,33 @@ const Index = () => (
         />
       </a>
       <ul className="main-navigation__menu">
-        <li className="main-navigation__menu-item main-navigation__menu-item--active">
-          <a href="#">
+        <li>
+          <a href="#" className="main-navigation__menu-item main-navigation__menu-item--active">
             Home
           </a>
         </li>
-        <li className="main-navigation__menu-item">
-          <a href="#">
+        <li>
+          <a href="#" className="main-navigation__menu-item">
             About us
           </a>
         </li>
-        <li className="main-navigation__menu-item">
-          <a href="#">
+        <li>
+          <a href="#" className="main-navigation__menu-item">
             Portfolio
           </a>
         </li>
-        <li className="main-navigation__menu-item">
-          <a href="#">
+        <li>
+          <a href="#" className="main-navigation__menu-item">
             Our Team
           </a>
         </li>
-        <li className="main-navigation__menu-item">
-          <a href="#">
+        <li>
+          <a href="#" className="main-navigation__menu-item">
             Blog
           </a>
         </li>
-        <li className="main-navigation__menu-item">
-          <a href="#">
+        <li>
+          <a href="#" className="main-navigation__menu-item">
             Contact
           </a>
         </li>
@@ -73,7 +73,7 @@ const Index = () => (
       </div>
     </section>
     <section className="our-expertise">
-      <h2 className="main-header our-expertise__header">
+      <h2 className="main-header">
         Our Expertise
       </h2>
       <div className="our-expertise__content">
@@ -186,7 +186,7 @@ const Index = () => (
       </div>
     </section>
     <section className="vision">
-      <img className="vision__image" src="https://picsum.photos/1200" />
+      <img className="vision__image" src="https://picsum.photos/1400" />
       <div className="vision__content">
         <h2 className="main-header">
           Let’s make
@@ -424,7 +424,7 @@ const Index = () => (
       </button>
     </section>
     <section className="our-team">
-      <h2 className="main-header mt-120">
+      <h2 className="main-header">
         Our Team
       </h2>
       <div className="our-team__member-items">
@@ -469,6 +469,176 @@ const Index = () => (
         </div>
       </div>
     </section>
+    <section className="pricing-plans">
+      <h2 className="main-header">
+        Pricing Plans
+      </h2>
+      <div className="pricing-plans__items">
+        <div className="pricing-plans__plan-card">
+          <p className="pricing-plans__plan-type m-0">
+            Basic
+          </p>
+          <p className="pricing-plans__plan-price">
+            <span className="pricing-plans__plan-price-currency">
+              $
+            </span>
+            <span className="pricing-plans__plan-price-value">
+              29
+            </span>
+            <span className="pricing-plans__plan-duration">
+              / mo
+            </span>
+          </p>
+          <ul className="pricing-plans__plan-services">
+            <li className="pricing-plans__plan-services-item">
+              1 Logo Design
+            </li>
+            <li className="pricing-plans__plan-services-item">
+              1 Website Design
+            </li>
+            <li className="pricing-plans__plan-services-item">
+              1 Domain Free
+            </li>
+            <li className="pricing-plans__plan-services-item">
+              3 Month License
+            </li>
+            <li className="pricing-plans__plan-services-item">
+              1 GB Storage
+            </li>
+          </ul>
+          <a href="#" className="pricing-plans__choose-plan-link">
+            Choose plan
+          </a>
+        </div>
+        <div className="pricing-plans__plan-card">
+          <p className="pricing-plans__plan-type m-0">
+            Starter
+          </p>
+          <p className="pricing-plans__plan-price">
+            <span className="pricing-plans__plan-price-currency">
+              $
+            </span>
+            <span className="pricing-plans__plan-price-value">
+              50
+            </span>
+            <span className="pricing-plans__plan-duration">
+              / mo
+            </span>
+          </p>
+          <ul className="pricing-plans__plan-services">
+            <li className="pricing-plans__plan-services-item">
+              2 Logo Design
+            </li>
+            <li className="pricing-plans__plan-services-item">
+              2 Website Design
+            </li>
+            <li className="pricing-plans__plan-services-item">
+              1 Domain Free
+            </li>
+            <li className="pricing-plans__plan-services-item">
+              6 Month License
+            </li>
+            <li className="pricing-plans__plan-services-item">
+              1 GB Storage
+            </li>
+          </ul>
+          <a href="#" className="pricing-plans__choose-plan-link">
+            Choose plan
+          </a>
+        </div>
+        <div className="pricing-plans__plan-card">
+          <p className="pricing-plans__plan-type m-0">
+            Professional
+          </p>
+          <p className="pricing-plans__plan-price">
+            <span className="pricing-plans__plan-price-currency">
+              $
+            </span>
+            <span className="pricing-plans__plan-price-value">
+              70
+            </span>
+            <span className="pricing-plans__plan-duration">
+              / mo
+            </span>
+          </p>
+          <ul className="pricing-plans__plan-services">
+            <li className="pricing-plans__plan-services-item">
+              3 Logo Design
+            </li>
+            <li className="pricing-plans__plan-services-item">
+              3 Website Design
+            </li>
+            <li className="pricing-plans__plan-services-item">
+              2 Domain Free
+            </li>
+            <li className="pricing-plans__plan-services-item">
+              12 Month License
+            </li>
+            <li className="pricing-plans__plan-services-item">
+              2 GB Storage
+            </li>
+          </ul>
+          <a href="#" className="pricing-plans__choose-plan-link">
+            Choose plan
+          </a>
+        </div>
+      </div>
+    </section>
+    <section className="partners">
+      {/* TODO */}
+    </section>
+    <section className="contact-us">
+      <div className="contact-us__form-container">
+        <h2 className="main-header">
+          Get in Touch
+        </h2>
+        <form className="contact-us__form mt-95">
+          <input className="main-input" type="text" placeholder="YOUR NAME" />
+          <input className="main-input mt-30" type="email" placeholder="VALID EMAIL" />
+          <textarea
+            rows="8"
+            className="main-textarea mt-55"
+            placeholder="YOUR MESSAGE"
+          />
+          <button className="button mt-40" type="submit">
+            Send message
+          </button>
+        </form>
+      </div>
+      <img
+        src="https://www.worldeasyguides.com/wp-content/uploads/2013/01/Place-Vendome-on-Map-of-Paris.jpg"
+        className="contact-us__map"
+        alt="1 Wall Street on the map"
+      />
+    </section>
+    <footer>
+      <a href="/">
+        <img
+          src="https://logodix.com/logo/72522.png"
+          alt="Company logo"
+          className="logo"
+        />
+      </a>
+      <ul>
+        <li>
+          <a href="#">
+            Facebbok
+          </a>
+        </li>
+      </ul>
+      <address>
+
+      </address>
+      <p>
+
+      </p>
+      <p>
+
+      </p>
+      <small>
+
+      </small>
+    </footer>
   </>
 );
 

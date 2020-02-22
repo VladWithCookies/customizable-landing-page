@@ -1,10 +1,8 @@
 .our-expertise {
   padding: 0 135px;
   min-height: 877px;
-}
-
-.our-expertise__header {
   padding-top: 143px;
+  box-sizing: border-box;
 }
 
 .our-expertise__content {
@@ -36,7 +34,7 @@
 }
 
 .our-expertise__services-item-header {
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 4.29px;

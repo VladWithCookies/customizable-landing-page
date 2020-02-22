@@ -1,0 +1,78 @@
+.pricing-plans {
+  min-height: 929px;
+  padding: 144px 137px 0 137px;
+  background-color: $gray-100;
+}
+
+.pricing-plans__items {
+  margin-top: 109px;
+  display: flex;
+  justify-content: center;
+  color: $gray-900;
+}
+
+.pricing-plans__plan-card {
+  width: 370px;
+  height: 506px;
+  background-color: white;
+  padding: 24px 24px 53px 24px;
+  text-align: center;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.pricing-plans__plan-type {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+}
+
+.pricing-plans__plan-price {
+  margin-top: 29px;
+  height: 80px;
+}
+
+.pricing-plans__plan-price-currency {
+  line-height: 54px;
+  font-size: 40px;
+  vertical-align: top;
+}
+
+.pricing-plans__plan-price-value {
+  font-size: 80px;
+  line-height: 80px;
+}
+
+.pricing-plans__plan-duration {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.pricing-plans__plan-services {
+  padding: 0;
+  margin-top: 51px;
+  margin-bottom: 69px;
+  list-style-type: none;
+}
+
+.pricing-plans__plan-services-item {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.pricing-plans__choose-plan-link {
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  line-height: 17px;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:visited {
+    color: $gray-800;
+  }
+}
