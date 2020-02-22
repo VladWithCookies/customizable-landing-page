@@ -8,7 +8,7 @@
 }
 
 .carousel__slide {
-  flex: 1;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   padding: 114px 95px;
@@ -16,15 +16,13 @@
   justify-content: space-between;
 }
 
-.carousel__control {
-  cursor: pointer;
-  height: 36px;
-  border-style: none;
-  background-color: transparent;
+.carousel__slide-content {
+  display: flex;
+  justify-content: space-between;
 }
 
-.carousel__slide-content {
-  flex: 1;
+.carousel__slide-content-text {
+  flex-grow: 1;
   max-width: 679px;
   display: flex;
   flex-direction: column;
@@ -32,7 +30,7 @@
   justify-content: center;
 }
 
-.carousel__slide-content-header {
+.carousel__slide-content-text-header {
   color: $gray-900;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -41,9 +39,13 @@
   margin: 0;
 }
 
-.carousel__slide-content-description {
+.carousel__slide-content-text-description {
   margin-top: 32px;
   color: $gray-300;
+}
+
+.carousel__slide-content-image {
+  object-fit: cover
 }
 
 .carousel__pagination {

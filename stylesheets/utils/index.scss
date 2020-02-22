@@ -5,6 +5,10 @@ $sides: (top, bottom, left, right);
   text-transform: uppercase;
 }
 
+.lh-0 {
+  line-height: 0;
+}
+
 @each $space in $space-amounts {
   @each $side in $sides {
     .m#{str-slice($side, 0, 1)}-#{$space} {

@@ -5,13 +5,13 @@
 }
 
 .vision__image {
-  flex: 1;
+  flex-grow: 1;
   max-width: 50%;
   object-fit: cover;
 }
 
 .vision__content {
-  flex: 1;
+  flex-grow: 1;
   padding: 101px 135px 0 130px;
 }
 

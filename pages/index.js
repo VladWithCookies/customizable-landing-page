@@ -1,9 +1,9 @@
 const Index = () => (
   <>
-    <nav className="main-navigation">
-      <a href="/">
+    <nav id="top" className="main-navigation">
+      <a href="/" className="lh-0">
         <img
-          src="https://logodix.com/logo/72522.png"
+          src="https://vignette.wikia.nocookie.net/villains/images/f/f2/Circle-outline-512.png/revision/latest?cb=20170410162921"
           alt="Company logo"
           className="logo"
         />
@@ -351,7 +351,7 @@ const Index = () => (
       </p>
     </section>
     <section className="video">
-      <button type="button" className="video__play-button">
+      <button type="button" className="flat-button">
         <svg width="55" height="65" viewBox="0 0 55 65" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fillRule="evenodd" clipRule="evenodd" d="M3.04809 5.31272L48.8267 32.0164L3.04809 58.7201V5.31272ZM0 0.00285937V64.0271L54.8771 32.0136L0 0V0.00285937Z" fill="white" />
         </svg>
@@ -392,21 +392,28 @@ const Index = () => (
       </div>
     </section>
     <section className="carousel">
-      <button type="button" className="carousel__control">
+      <button type="button" className="flat-button">
         <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fillRule="evenodd" clipRule="evenodd" d="M34.8297 18.6013H5.12463L19.3955 32.942L17.7539 34.5917L0.680359 17.4347L17.7562 0.27533L19.3979 1.925L5.12463 16.268H34.8297V18.6013Z" fill="#333333" />
         </svg>
       </button>
       <div className="carousel__slide">
         <div className="carousel__slide-content">
-          <h3 className="carousel__slide-content-header">
-            Then they show that show to the people who make shows
-          </h3>
-          <p className="carousel__slide-content-description">
-            The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.
-            Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he
-            is truly his brother’s.
-          </p>
+          <div className="carousel__slide-content-text">
+            <h3 className="carousel__slide-content-text-header">
+              Then they show that show to the people who make shows
+            </h3>
+            <p className="carousel__slide-content-text-description">
+              The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men.
+              Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he
+              is truly his brother’s.
+            </p>
+          </div>
+          <img
+            className="carousel__slide-content-image"
+            src="https://picsum.photos/500"
+            alt="Gallery image"
+          />
         </div>
         <div className="carousel__pagination">
           <button type="button" className="carousel__pagination-control" />
@@ -417,7 +424,7 @@ const Index = () => (
           <button type="button" className="carousel__pagination-control" />
         </div>
       </div>
-      <button type="button" className="carousel__control">
+      <button type="button" className="flat-button">
         <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fillRule="evenodd" clipRule="evenodd" d="M34.1494 17.4347L17.0735 34.594L15.4319 32.9443L29.7028 18.6037H0V16.2703H29.7051L15.4319 1.925L17.0735 0.27533L34.1494 17.4347Z" fill="#333333" />
         </svg>
@@ -585,7 +592,31 @@ const Index = () => (
       </div>
     </section>
     <section className="partners">
-      {/* TODO */}
+      <img
+        className="partners__logo"
+        src="https://xn--80aed5aobb1a.xn--p1ai/wp-content/uploads/ford-text-logo-black-2048x2048.png"
+        alt="Ford logo"
+      />
+      <img
+        className="partners__logo"
+        src="https://xn--80aed5aobb1a.xn--p1ai/wp-content/uploads/ford-text-logo-black-2048x2048.png"
+        alt="Ford logo"
+      />
+      <img
+        className="partners__logo"
+        src="https://xn--80aed5aobb1a.xn--p1ai/wp-content/uploads/ford-text-logo-black-2048x2048.png"
+        alt="Ford logo"
+      />
+      <img
+        className="partners__logo"
+        src="https://xn--80aed5aobb1a.xn--p1ai/wp-content/uploads/ford-text-logo-black-2048x2048.png"
+        alt="Ford logo"
+      />
+      <img
+        className="partners__logo"
+        src="https://xn--80aed5aobb1a.xn--p1ai/wp-content/uploads/ford-text-logo-black-2048x2048.png"
+        alt="Ford logo"
+      />
     </section>
     <section className="contact-us">
       <div className="contact-us__form-container">
@@ -611,32 +642,66 @@ const Index = () => (
         alt="1 Wall Street on the map"
       />
     </section>
-    <footer>
-      <a href="/">
-        <img
-          src="https://logodix.com/logo/72522.png"
-          alt="Company logo"
-          className="logo"
-        />
-      </a>
-      <ul>
-        <li>
-          <a href="#">
-            Facebbok
+    <footer className="main-footer">
+      <div className="main-footer__contact-info">
+        <div className="main-footer__logo-container">
+          <a href="/" className="lh-0">
+            <img
+              src="https://vignette.wikia.nocookie.net/villains/images/f/f2/Circle-outline-512.png/revision/latest?cb=20170410162921"
+              alt="Company logo"
+              className="logo"
+            />
           </a>
-        </li>
-      </ul>
-      <address>
-
-      </address>
-      <p>
-
-      </p>
-      <p>
-
-      </p>
-      <small>
-
+        </div>
+        <ul className="main-footer__social-links">
+          <li>
+            <a href="#" className="main-footer__social-links-item">
+              Facebbok
+            </a>
+          </li>
+          <li>
+            <a href="#" className="main-footer__social-links-item">
+              Twitter
+            </a>
+          </li>
+          <li>
+            <a href="#" className="main-footer__social-links-item">
+              Google+
+            </a>
+          </li>
+          <li>
+            <a href="#" className="main-footer__social-links-item">
+              Behance
+            </a>
+          </li>
+          <li>
+            <a href="#" className="main-footer__social-links-item">
+              Dribble
+            </a>
+          </li>
+          <li>
+            <a href="#" className="main-footer__social-links-item">
+              Instagram
+            </a>
+          </li>
+        </ul>
+        <address className="main-footer__contact-info-address">
+          Mese Selimovica 52, Banja Luka - BiH
+          <a href="tel:+0038765252222">
+          (00387) 65 252 222
+          </a>
+          <a href="mailto:info@mail.com">
+            info@mail.com
+          </a>
+        </address>
+        <a href="#top" className="flat-button mt-55">
+          <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fillRule="evenodd" clipRule="evenodd" d="M16.354 7.89597L15.647 8.60297L8.5 1.45697L1.354 8.60297L0.647003 7.89597L8.5 0.0429688L16.354 7.89597Z" fill="white" />
+          </svg>
+        </a>
+      </div>
+      <small className="main-footer__copyright">
+        @2015 Oxygen Theme
       </small>
     </footer>
   </>
