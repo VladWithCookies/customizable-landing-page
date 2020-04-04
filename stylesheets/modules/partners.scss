@@ -1,0 +1,11 @@
+.partners {
+  min-height: 292px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.partners__logo {
+  max-height: 250px;
+  object-fit: cover;
+}

@@ -1,16 +1,17 @@
 .vision {
   display: flex;
   background: $gray-100;
-  max-height: 840px;
+  min-height: 840px;
 }
 
 .vision__image {
-  width: 50%;
+  flex-grow: 1;
+  max-width: 50%;
   object-fit: cover;
 }
 
 .vision__content {
-  width: 50%;
+  flex-grow: 1;
   padding: 101px 135px 0 130px;
 }
 

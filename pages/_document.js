@@ -1,13 +1,14 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-class CustomgDocument extends Document {
+class CustomDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
           <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />
@@ -18,4 +19,4 @@ class CustomgDocument extends Document {
   }
 }
 
-export default CustomgDocument;
+export default CustomDocument;

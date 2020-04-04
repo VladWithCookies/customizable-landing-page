@@ -1,0 +1,27 @@
+.testimonial {
+  min-height: 433px;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 300;
+  padding-top: 130px;
+  box-sizing: border-box;
+}
+
+.testimonial__quote {
+  font-size: 18px;
+  line-height: 36px;
+  color: $gray-900;
+  max-width: 650px;
+  display: inline-block;
+
+  &:before, &:after {
+    content: '';
+  }
+}
+
+.testimonial__author {
+  line-height: 32px;
+  color: $gray-200;
+  margin-top: 51px;
+}

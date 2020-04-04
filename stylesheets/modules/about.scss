@@ -2,15 +2,16 @@
   display: flex;
   background-color: $gray-100;
   min-height: 491px;
-  padding: 0 135px 159px 135px;
+  padding-left: 135px;
+  padding-right: 135px;
+  padding-top: 143px;
+  box-sizing: border-box;
 }
 
 .about-us__header {
   width: 267px;
-  padding-top: 143px;
 }
 
 .about-us__content {
-  margin-top: 152px;
   margin-left: 133px;
 }
