@@ -21,7 +21,6 @@ $rows: 12;
 .gallery__image-info {
   position: absolute;
   text-align: center;
-  color: white;
   text-transform: uppercase;
   height: 100%;
   width: 100%;
@@ -30,7 +29,12 @@ $rows: 12;
   justify-content: center;
   flex-direction: column;
   transition: all 0.3s;
-  text-decoration: none;
+  cursor: pointer;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 
   &:hover, &:focus {
     opacity: 1;

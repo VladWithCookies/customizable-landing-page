@@ -7,43 +7,45 @@ const Index = () => (
         Page name - Page description - Website
       </title>
     </Head>
-    <nav id="top" className="main-navigation">
+    <header id="top" className="main-header">
       <a href="/" className="lh-0">
         <img src="https://vignette.wikia.nocookie.net/villains/images/f/f2/Circle-outline-512.png/revision/latest?cb=20170410162921" alt="Company logo" className="logo" />
       </a>
-      <ul className="main-navigation__menu">
-        <li>
-          <a href="#" className="main-navigation__menu-item main-navigation__menu-item--active">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="#" className="main-navigation__menu-item">
-            About us
-          </a>
-        </li>
-        <li>
-          <a href="#" className="main-navigation__menu-item">
-            Portfolio
-          </a>
-        </li>
-        <li>
-          <a href="#" className="main-navigation__menu-item">
-            Our Team
-          </a>
-        </li>
-        <li>
-          <a href="#" className="main-navigation__menu-item">
-            Blog
-          </a>
-        </li>
-        <li>
-          <a href="#" className="main-navigation__menu-item">
-            Contact
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <nav className="main-header__navigation">
+        <ul>
+          <li>
+            <a href="#" className="main-header__navigation-item main-header__navigation-item--active">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#" className="main-header__navigation-item">
+              About us
+            </a>
+          </li>
+          <li>
+            <a href="#" className="main-header__navigation-item">
+              Portfolio
+            </a>
+          </li>
+          <li>
+            <a href="#" className="main-header__navigation-item">
+              Our Team
+            </a>
+          </li>
+          <li>
+            <a href="#" className="main-header__navigation-item">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="#" className="main-header__navigation-item">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <section className="hero">
       <h1 className="hero__header">
         Oxygen
@@ -57,7 +59,7 @@ const Index = () => (
     </section>
     <section className="about-us">
       <div>
-        <h2 className="main-header about-us__header">
+        <h2 className="main-heading about-us__heading">
           About Us
         </h2>
       </div>
@@ -76,7 +78,7 @@ const Index = () => (
       </div>
     </section>
     <section className="our-expertise">
-      <h2 className="main-header">
+      <h2 className="main-heading">
         Our Expertise
       </h2>
       <div className="our-expertise__content">
@@ -191,7 +193,7 @@ const Index = () => (
     <section className="vision">
       <img className="vision__image" src="https://picsum.photos/1400" alt="" />
       <div className="vision__content">
-        <h2 className="main-header">
+        <h2 className="main-heading">
           Let’s make
           <br />
           magic.
@@ -213,9 +215,9 @@ const Index = () => (
     </section>
     <section className="portfolio">
       <div className="portfolio__navigation">
-        <h1 className="main-header">
+        <h2 className="main-heading">
           Portfolio
-        </h1>
+        </h2>
         <ul className="portfolio__navigation-menu">
           <li className="portfolio__navigation-menu-item portfolio__navigation-menu-item--active">
             <a href="#">
@@ -240,105 +242,123 @@ const Index = () => (
         </ul>
       </div>
       <div className="gallery">
-        <div className="gallery__image gallery__image--7x">
+        <figure className="gallery__image gallery__image--7x">
           <img src="https://picsum.photos/900" alt="" />
-          <a href="#" className="gallery__image-info">
-            <p className="gallery__image-caption">
-              Ocaa cupidatat
-            </p>
-            <p className="gallery__image-category">
-              Design
-            </p>
-          </a>
-        </div>
-        <div className="gallery__image gallery__image--4x">
+          <figcaption className="gallery__image-info">
+            <a href="#">
+              <p className="gallery__image-caption">
+                Ocaa cupidatat
+              </p>
+              <p className="gallery__image-category">
+                Design
+              </p>
+            </a>
+          </figcaption>
+        </figure>
+        <figure className="gallery__image gallery__image--4x">
           <img src="https://picsum.photos/910" alt="" />
-          <a href="#" className="gallery__image-info">
-            <p className="gallery__image-caption">
-              Ocaa cupidatat
-            </p>
-            <p className="gallery__image-category">
-              Design
-            </p>
-          </a>
-        </div>
-        <div className="gallery__image gallery__image--5x">
+          <figcaption className="gallery__image-info">
+            <a href="#">
+              <p className="gallery__image-caption">
+                Ocaa cupidatat
+              </p>
+              <p className="gallery__image-category">
+                Design
+              </p>
+            </a>
+          </figcaption>
+        </figure>
+        <figure className="gallery__image gallery__image--5x">
           <img src="https://picsum.photos/920" alt="" />
-          <a href="#" className="gallery__image-info">
-            <p className="gallery__image-caption">
-              Ocaa cupidatat
-            </p>
-            <p className="gallery__image-category">
-              Design
-            </p>
-          </a>
-        </div>
-        <div className="gallery__image gallery__image--4x">
+          <figcaption className="gallery__image-info">
+            <a href="#">
+              <p className="gallery__image-caption">
+                Ocaa cupidatat
+              </p>
+              <p className="gallery__image-category">
+                Design
+              </p>
+            </a>
+          </figcaption>
+        </figure>
+        <figure className="gallery__image gallery__image--4x">
           <img src="https://picsum.photos/930" alt="" />
-          <a href="#" className="gallery__image-info">
-            <p className="gallery__image-caption">
-              Ocaa cupidatat
-            </p>
-            <p className="gallery__image-category">
-              Design
-            </p>
-          </a>
-        </div>
-        <div className="gallery__image gallery__image--4x">
+          <figcaption className="gallery__image-info">
+            <a href="#">
+              <p className="gallery__image-caption">
+                Ocaa cupidatat
+              </p>
+              <p className="gallery__image-category">
+                Design
+              </p>
+            </a>
+          </figcaption>
+        </figure>
+        <figure className="gallery__image gallery__image--4x">
           <img src="https://picsum.photos/940" alt="" />
-          <a href="#" className="gallery__image-info">
-            <p className="gallery__image-caption">
-              Ocaa cupidatat
-            </p>
-            <p className="gallery__image-category">
-              Design
-            </p>
-          </a>
-        </div>
-        <div className="gallery__image gallery__image--8x">
+          <figcaption className="gallery__image-info">
+            <a href="#">
+              <p className="gallery__image-caption">
+                Ocaa cupidatat
+              </p>
+              <p className="gallery__image-category">
+                Design
+              </p>
+            </a>
+          </figcaption>
+        </figure>
+        <figure className="gallery__image gallery__image--8x">
           <img src="https://picsum.photos/950" alt="" />
-          <a href="#" className="gallery__image-info">
-            <p className="gallery__image-caption">
-              Ocaa cupidatat
-            </p>
-            <p className="gallery__image-category">
-              Design
-            </p>
-          </a>
-        </div>
-        <div className="gallery__image gallery__image--7x">
+          <figcaption className="gallery__image-info">
+            <a href="#">
+              <p className="gallery__image-caption">
+                Ocaa cupidatat
+              </p>
+              <p className="gallery__image-category">
+                Design
+              </p>
+            </a>
+          </figcaption>
+        </figure>
+        <figure className="gallery__image gallery__image--7x">
           <img src="https://picsum.photos/960" alt="" />
-          <a href="#" className="gallery__image-info">
-            <p className="gallery__image-caption">
-              Ocaa cupidatat
-            </p>
-            <p className="gallery__image-category">
-              Design
-            </p>
-          </a>
-        </div>
-        <div className="gallery__image gallery__image--5x">
+          <figcaption className="gallery__image-info">
+            <a href="#">
+              <p className="gallery__image-caption">
+                Ocaa cupidatat
+              </p>
+              <p className="gallery__image-category">
+                Design
+              </p>
+            </a>
+          </figcaption>
+        </figure>
+        <figure className="gallery__image gallery__image--5x">
           <img src="https://picsum.photos/970" alt="" />
-          <a href="#" className="gallery__image-info">
-            <p className="gallery__image-caption">
-              Ocaa cupidatat
-            </p>
-            <p className="gallery__image-category">
-              Design
-            </p>
-          </a>
-        </div>
-        <div className="gallery__image gallery__image--4x">
+          <figcaption className="gallery__image-info">
+            <a href="#">
+              <p className="gallery__image-caption">
+                Ocaa cupidatat
+              </p>
+              <p className="gallery__image-category">
+                Design
+              </p>
+            </a>
+          </figcaption>
+        </figure>
+        <figure className="gallery__image gallery__image--4x">
           <img src="https://picsum.photos/980" alt="" />
-          <a href="#" className="gallery__image-info">
-            <p className="gallery__image-caption">
-              Ocaa cupidatat
-            </p>
-            <p className="gallery__image-category">
-              Design
-            </p>
-          </a>
-        </div>
+          <figcaption className="gallery__image-info">
+            <a href="#">
+              <p className="gallery__image-caption">
+                Ocaa cupidatat
+              </p>
+              <p className="gallery__image-category">
+                Design
+              </p>
+            </a>
+          </figcaption>
+        </figure>
       </div>
       <button className="portfolio__show-more-button">
         View more projects
@@ -403,7 +423,7 @@ const Index = () => (
       <div className="carousel__slide">
         <div className="carousel__slide-content">
           <div className="carousel__slide-content-text">
-            <h2 className="carousel__slide-content-text-header">
+            <h2 className="carousel__slide-content-text-heading">
               Then they show that show to the people who make shows
             </h2>
             <p className="carousel__slide-content-text-description">
@@ -430,41 +450,47 @@ const Index = () => (
       </button>
     </section>
     <section className="our-team">
-      <h2 className="main-header">
+      <h2 className="main-heading">
         Our Team
       </h2>
       <div className="our-team__member-items">
-        <div className="our-team__member">
+        <figure className="our-team__member">
           <img src="https://picsum.photos/500" className="out-team__member-photo" alt="CEO photo" />
-          <p className="our-team__member-name">
-            Bernard Sparks
-          </p>
-          <p className="our-team__member-position">
-            CEO
-          </p>
-        </div>
-        <div className="our-team__member">
+          <figcaption>
+            <p className="our-team__member-name">
+              Bernard Sparks
+            </p>
+            <p className="our-team__member-position">
+              CEO
+            </p>
+          </figcaption>
+        </figure>
+        <figure className="our-team__member">
           <img src="https://picsum.photos/510" className="out-team__member-photo" alt="Co-Founder photo" />
-          <p className="our-team__member-name">
-            Minerva Benson
-          </p>
-          <p className="our-team__member-position">
-            Co-Founder
-          </p>
-        </div>
-        <div className="our-team__member">
+          <figcaption>
+            <p className="our-team__member-name">
+              Minerva Benson
+            </p>
+            <p className="our-team__member-position">
+              Co-Founder
+            </p>
+          </figcaption>
+        </figure>
+        <figure className="our-team__member">
           <img src="https://picsum.photos/520" className="out-team__member-photo" alt="Sales photo" />
-          <p className="our-team__member-name">
-            Jared Olson
-          </p>
-          <p className="our-team__member-position">
-            Sales
-          </p>
-        </div>
+          <figcaption>
+            <p className="our-team__member-name">
+              Jared Olson
+            </p>
+            <p className="our-team__member-position">
+              Sales
+            </p>
+          </figcaption>
+        </figure>
       </div>
     </section>
     <section className="pricing-plans">
-      <h2 className="main-header">
+      <h2 className="main-heading">
         Pricing Plans
       </h2>
       <div className="pricing-plans__items">
@@ -583,11 +609,10 @@ const Index = () => (
       <img className="partners__logo" src="https://xn--80aed5aobb1a.xn--p1ai/wp-content/uploads/ford-text-logo-black-2048x2048.png" alt="Ford logo" />
       <img className="partners__logo" src="https://xn--80aed5aobb1a.xn--p1ai/wp-content/uploads/ford-text-logo-black-2048x2048.png" alt="Ford logo" />
       <img className="partners__logo" src="https://xn--80aed5aobb1a.xn--p1ai/wp-content/uploads/ford-text-logo-black-2048x2048.png" alt="Ford logo" />
-      <img className="partners__logo" src="https://xn--80aed5aobb1a.xn--p1ai/wp-content/uploads/ford-text-logo-black-2048x2048.png" alt="Ford logo" />
     </section>
     <section className="contact-us">
       <div className="contact-us__form-container">
-        <h2 className="main-header">
+        <h2 className="main-heading">
           Get in Touch
         </h2>
         <form className="contact-us__form mt-95">

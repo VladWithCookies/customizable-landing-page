@@ -1,4 +1,4 @@
-.main-navigation {
+.main-header {
   height: 94px;
   max-width: 100%;
   display: flex;
@@ -8,25 +8,28 @@
   font-family: 'Raleway', sans-serif;
 }
 
-.main-navigation__menu {
-  display: flex;
-  list-style-type: none;
+.main-header__navigation {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 14px;
   font-size: 12px;
   letter-spacing: 0.6px;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
 }
 
-.main-navigation__menu-item {
+.main-header__navigation-item {
   margin-left: 50px;
   padding: 9px;
   color: $gray-800;
   text-decoration: none;
 }
 
-.main-navigation__menu-item:hover,
-.main-navigation__menu-item:focus,
-.main-navigation__menu-item--active {
+.main-header__navigation-item:hover,
+.main-header__navigation-item:focus,
+.main-header__navigation-item--active {
   border-bottom: 2px solid $orange-500;
 }
