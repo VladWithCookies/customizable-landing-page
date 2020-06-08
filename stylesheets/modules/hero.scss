@@ -1,24 +1,25 @@
 .hero {
-  height: 658px;
+  height: 650px;
   background: url(https://picsum.photos/1440/658) no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .hero__header {
-  margin-top: 213px;
+  margin-top: 200px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  line-height: 122px;
+  line-height: 120px;
   font-size: 100px;
   text-transform: uppercase;
   color: white;
 }
 
 .hero__subtitle {
-  margin-top: 18.5px;
+  margin-top: 18px;
   font-family: 'Montserrat', sans-serif;
   color: $orange-500;
   text-transform: uppercase;

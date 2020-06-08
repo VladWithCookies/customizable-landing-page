@@ -1,17 +1,22 @@
 .about-us {
   display: flex;
   background-color: $gray-100;
-  min-height: 491px;
-  padding-left: 135px;
-  padding-right: 135px;
-  padding-top: 143px;
+  min-height: 500px;
+  padding: 50px;
   box-sizing: border-box;
+  flex-direction: column;
+
+  @include respond-to($md) {
+    padding: 135px;
+  }
+
+  @include respond-to($lg) {
+    flex-direction: row;
+  }
 }
 
 .about-us__heading {
   width: 267px;
-}
-
-.about-us__content {
-  margin-left: 133px;
+  margin-right: 135px;
+  margin-bottom: 30px;
 }

@@ -11,7 +11,12 @@ const Index = () => (
       <a href="/" className="lh-0">
         <img src="https://vignette.wikia.nocookie.net/villains/images/f/f2/Circle-outline-512.png/revision/latest?cb=20170410162921" alt="Company logo" className="logo" />
       </a>
-      <nav className="main-header__navigation">
+      <svg className="d-none-lg" viewBox="0 0 100 70" width="40" height="40">
+        <rect width="100" height="10" />
+        <rect y="30" width="100" height="10" />
+        <rect y="60" width="100" height="10" />
+      </svg>
+      <nav className="main-header__navigation d-block-lg">
         <ul>
           <li>
             <a href="#" className="main-header__navigation-item main-header__navigation-item--active">
@@ -63,7 +68,7 @@ const Index = () => (
           About Us
         </h2>
       </div>
-      <div className="about-us__content">
+      <div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium commodi totam culpa, dolorum asperiores iusto
           quidem, nesciunt hic eaque blanditiis enim, id maiores nam nobis dignissimos aliquam ad minus nisi. In, fuga

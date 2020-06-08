@@ -9,6 +9,22 @@ $sides: (top, bottom, left, right);
   line-height: 0;
 }
 
+@each $name, $breakpoint in $breakpoints {
+  .d-none-#{$name} {
+    @include respond-to($breakpoint) {
+      display: none;
+    }
+  }
+
+  .d-block-#{$name} {
+    display: none;
+
+    @include respond-to($breakpoint) {
+      display: block;
+    }
+  }
+}
+
 @each $space in $space-amounts {
   @each $side in $sides {
     .m#{str-slice($side, 0, 1)}-#{$space} {

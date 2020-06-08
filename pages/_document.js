@@ -5,6 +5,7 @@ class CustomDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
           <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
