@@ -1,13 +1,18 @@
 .contact-us {
   display: flex;
-  min-height: 896px;
+  min-height: 900px;
+  flex-direction: column;
+
+  @include respond-to($lg) {
+    flex-direction: row;
+  }
 }
 
 .contact-us__form-container {
   flex-grow: 1;
   padding-top: 145px;
   padding-left: 135px;
-  padding-right: 101px;
+  padding-right: 100px;
 }
 
 .contact-us__form {
@@ -17,6 +22,6 @@
 }
 
 .contact-us__map {
-  width: 635px;
+  width: 100%;
   object-fit: cover;
 }

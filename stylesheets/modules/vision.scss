@@ -2,19 +2,33 @@
   display: flex;
   background: $gray-100;
   min-height: 840px;
+  flex-direction: column;
+
+  @include respond-to($lg) {
+    flex-direction: row;
+  }
 }
 
 .vision__image {
   flex-grow: 1;
-  max-width: 50%;
   object-fit: cover;
+  max-height: 500px;
+
+  @include respond-to($lg) {
+    max-width: 50%;
+    max-height: 100%;
+  }
 }
 
 .vision__content {
   flex-grow: 1;
-  padding: 101px 135px 0 130px;
+  padding: 50px;
+
+  @include respond-to($md) {
+    padding: 135px;
+  }
 }
 
 .vision__description {
-  margin-top: 67px;
+  margin-top: 70px;
 }

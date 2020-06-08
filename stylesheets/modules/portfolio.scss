@@ -3,10 +3,16 @@
 }
 
 .portfolio__navigation {
-  padding: 135px 103px 122px 139px;
+  padding: 50px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+
+  @include respond-to($lg) {
+    flex-direction: row;
+    align-items: center;
+    padding: 135px;
+  }
 }
 
 .portfolio__navigation-menu {
@@ -17,15 +23,24 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+
+  @include respond-to($lg) {
+    flex-direction: row;
+    margin-top: 0;
+  }
 }
 
 .portfolio__navigation-menu-item {
-  margin-left: 50px;
-
   a {
-    padding: 9px;
+    padding: 10px;
     color: $gray-825;
     text-decoration: none;
+  }
+
+  @include respond-to($lg) {
+    margin-left: 50px;
   }
 }
 
@@ -36,7 +51,7 @@
 }
 
 .portfolio__show-more-button {
-  margin-top: 48px;
+  margin-top: 50px;
   width: 100%;
   min-height: 100px;
   background-color: $gray-100;
@@ -44,7 +59,7 @@
   font-weight: 700;
   line-height: 17px;
   text-transform: uppercase;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.5px;
   color: $gray-900;
   border-style: none;
   cursor: pointer;

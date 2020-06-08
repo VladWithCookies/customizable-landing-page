@@ -1,13 +1,21 @@
 .our-expertise {
-  padding: 0 135px;
-  min-height: 877px;
-  padding-top: 143px;
+  min-height: 870px;
   box-sizing: border-box;
+  padding: 50px;
+
+  @include respond-to($md) {
+    padding: 135px;
+  }
 }
 
 .our-expertise__content {
-  margin-top: 89px;
+  margin-top: 90px;
   display: flex;
+  flex-direction: column;
+
+  @include respond-to($lg) {
+    flex-direction: row;
+  }
 }
 
 .our-expertise__stats {
@@ -15,29 +23,42 @@
 }
 
 .our-expertise__description {
-  margin-left: 30px;
+  @include respond-to($lg) {
+    margin-left: 30px;
+  }
 }
 
 .our-expertise__services {
-  margin-top: 110px;
   display: flex;
-  padding: 0 3px;
+  padding: 0 5px;
+  flex-direction: column;
+
+  @include respond-to($lg) {
+    margin-top: 110px;
+    flex-direction: row;
+  }
 }
 
 .our-expertise__services-item {
   display: flex;
-  margin-right: 27px;
+  margin-top: 50px;
+
+  @include respond-to($lg) {
+    flex-direction: row;
+    margin-top: 0;
+    margin-right: 30px;
+  }
 }
 
 .our-expertise__services-item-icon {
-  margin-right:  35px;
+  margin-right: 35px;
 }
 
 .our-expertise__services-item-header {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   line-height: 20px;
-  letter-spacing: 4.29px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: $gray-825;
 }
