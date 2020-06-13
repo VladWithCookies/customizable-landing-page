@@ -33,6 +33,9 @@
 }
 
 .portfolio__navigation-menu-item {
+  width: fit-content;
+  margin-bottom: 2px;
+
   a {
     padding: 10px;
     color: $gray-825;
@@ -48,6 +51,7 @@
 .portfolio__navigation-menu-item:focus,
 .portfolio__navigation-menu-item--active {
   border-bottom: 2px solid $orange-500;
+  margin-bottom: 0;
 }
 
 .portfolio__show-more-button {

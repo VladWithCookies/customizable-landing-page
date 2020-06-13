@@ -1,11 +1,17 @@
 .stats {
-  min-height: 431px;
+  min-height: 430px;
   display: flex;
-  justify-content: space-around;
-  padding-top: 164px;
-  padding-left: 35px;
-  padding-right: 35px;
+  align-items: center;
+  flex-direction: column;
+  padding: 35px;
   box-sizing: border-box;
+  text-align: center;
+
+  @include respond-to($sm) {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-around;
+  }
 }
 
 .stats__value {
@@ -14,11 +20,11 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 60px;
   font-weight: 700;
-  line-height: 73px;
+  line-height: 75px;
 }
 
 .stats__title {
   color: $blue-500;
-  line-height: 19px;
-  margin-top: 9px;
+  line-height: 20px;
+  margin-top: 10px;
 }
