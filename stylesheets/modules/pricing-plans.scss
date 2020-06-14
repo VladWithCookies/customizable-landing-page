@@ -1,23 +1,40 @@
 .pricing-plans {
-  min-height: 929px;
-  padding: 144px 137px 0 137px;
+  min-height: 930px;
+  padding: 50px;
   background-color: $gray-100;
+
+  @include respond-to($md) {
+    padding: 135px;
+  }
 }
 
 .pricing-plans__items {
-  margin-top: 109px;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   color: $gray-900;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond-to($lg) {
+    flex-direction: row;
+  }
 }
 
 .pricing-plans__plan-card {
   width: 370px;
-  height: 506px;
+  height: 500px;
   background-color: white;
-  padding: 24px 24px 53px 24px;
+  padding: 25px 25px 50px 25px;
   text-align: center;
-  margin-right: 30px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+
+  @include respond-to($lg) {
+    flex-direction: row;
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
 
   &:last-child {
     margin-right: 0px;
@@ -32,7 +49,7 @@
 }
 
 .pricing-plans__plan-price {
-  margin-top: 29px;
+  margin-top: 30px;
   height: 80px;
 }
 
@@ -54,8 +71,8 @@
 
 .pricing-plans__plan-services {
   padding: 0;
-  margin-top: 51px;
-  margin-bottom: 69px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   list-style-type: none;
 }
 

@@ -1,13 +1,23 @@
 .our-team {
-  min-height: 999px;
-  padding: 120px 135px 0 135px;
+  min-height: 1000px;
+  padding: 50px;
   box-sizing: border-box;
+
+  @include respond-to($md) {
+    padding: 135px;
+  }
 }
 
 .our-team__member-items {
   margin-top: 120px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @include respond-to($lg) {
+    flex-direction: row;
+  }
 }
 
 .our-team__member {
@@ -16,8 +26,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 15px;
   text-align: center;
+  padding-bottom: 50px;
+
+  @include respond-to($lg) {
+    padding: 0 15px;
+  }
 }
 
 .out-team__member-photo {
@@ -41,5 +55,5 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 16px;
-  margin-top: 12px;
+  margin-top: 10px;
 }
