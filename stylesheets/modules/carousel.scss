@@ -64,7 +64,12 @@
 }
 
 .carousel__slide-content-image {
-  object-fit: cover
+  object-fit: cover;
+  width: 100%;
+
+  @include respond-to($xl) {
+    max-width: 500px;
+  }
 }
 
 .carousel__pagination {

@@ -19,7 +19,11 @@
 }
 
 .our-expertise__stats {
-  min-width: 370px;
+  min-width: none;
+
+  @include respond-to($lg) {
+    min-width: 370px;
+  }
 }
 
 .our-expertise__description {

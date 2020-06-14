@@ -10,9 +10,11 @@
 
 .contact-us__form-container {
   flex-grow: 1;
-  padding-top: 145px;
-  padding-left: 135px;
-  padding-right: 100px;
+  padding: 50px;
+
+  @include respond-to($lg) {
+    padding: 135px;
+  }
 }
 
 .contact-us__form {
@@ -22,6 +24,11 @@
 }
 
 .contact-us__map {
-  width: 100%;
+  max-width: 100%;
   object-fit: cover;
+  overflow: hidden;
+
+  @include respond-to($lg) {
+    max-width: 40%;
+  }
 }

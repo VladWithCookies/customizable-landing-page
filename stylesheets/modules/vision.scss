@@ -24,7 +24,7 @@
   flex-grow: 1;
   padding: 50px;
 
-  @include respond-to($md) {
+  @include respond-to($xl) {
     padding: 135px;
   }
 }
