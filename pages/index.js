@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import MobileNavigation from '../components/MobileNavigation';
+
 const Index = () => (
   <>
     <Head>
@@ -11,30 +13,25 @@ const Index = () => (
       <a href="/" className="lh-0">
         <img src="https://vignette.wikia.nocookie.net/villains/images/f/f2/Circle-outline-512.png/revision/latest?cb=20170410162921" alt="Company logo" className="logo" />
       </a>
-      <svg className="d-none-lg" viewBox="0 0 100 70" width="40" height="40">
-        <rect width="100" height="10" />
-        <rect y="30" width="100" height="10" />
-        <rect y="60" width="100" height="10" />
-      </svg>
       <nav className="main-header__navigation d-block-lg">
         <ul>
           <li>
-            <a href="#" className="main-header__navigation-item main-header__navigation-item--active">
+            <a href="#top" className="main-header__navigation-item">
               Home
             </a>
           </li>
           <li>
-            <a href="#" className="main-header__navigation-item">
+            <a href="#about-us" className="main-header__navigation-item">
               About us
             </a>
           </li>
           <li>
-            <a href="#" className="main-header__navigation-item">
+            <a href="#portfolio" className="main-header__navigation-item">
               Portfolio
             </a>
           </li>
           <li>
-            <a href="#" className="main-header__navigation-item">
+            <a href="#our-team" className="main-header__navigation-item">
               Our Team
             </a>
           </li>
@@ -44,12 +41,13 @@ const Index = () => (
             </a>
           </li>
           <li>
-            <a href="#" className="main-header__navigation-item">
+            <a href="#contact" className="main-header__navigation-item">
               Contact
             </a>
           </li>
         </ul>
       </nav>
+      <MobileNavigation />
     </header>
     <section className="hero">
       <h1 className="hero__header">
@@ -62,7 +60,7 @@ const Index = () => (
         <div className="mouse__wheel"/>
       </div>
     </section>
-    <section className="about-us">
+    <section id="about-us" className="about-us">
       <div>
         <h2 className="main-heading about-us__heading">
           About Us
@@ -218,7 +216,7 @@ const Index = () => (
         </p>
       </div>
     </section>
-    <section className="portfolio">
+    <section id="portfolio" className="portfolio">
       <div className="portfolio__navigation">
         <h2 className="main-heading">
           Portfolio
@@ -454,7 +452,7 @@ const Index = () => (
         </svg>
       </button>
     </section>
-    <section className="our-team">
+    <section id="our-team" className="our-team">
       <h2 className="main-heading">
         Our Team
       </h2>
@@ -615,7 +613,7 @@ const Index = () => (
       <img className="partners__logo" src="https://xn--80aed5aobb1a.xn--p1ai/wp-content/uploads/ford-text-logo-black-2048x2048.png" alt="Ford logo" />
       <img className="partners__logo" src="https://xn--80aed5aobb1a.xn--p1ai/wp-content/uploads/ford-text-logo-black-2048x2048.png" alt="Ford logo" />
     </section>
-    <section className="contact-us">
+    <section id="contact" className="contact-us">
       <div className="contact-us__form-container">
         <h2 className="main-heading">
           Get in Touch

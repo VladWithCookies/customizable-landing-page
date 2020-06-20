@@ -9,6 +9,10 @@ $sides: (top, bottom, left, right);
   line-height: 0;
 }
 
+.position-absolute {
+  position: absolute;
+}
+
 @each $name, $breakpoint in $breakpoints {
   .d-none-#{$name} {
     @include respond-to($breakpoint) {
