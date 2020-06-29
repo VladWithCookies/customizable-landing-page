@@ -3,7 +3,11 @@ import { useState } from 'react';
 
 const MobileNavigation = () => {
   const [isOpened, setIsOpened] = useState(false);
-  const toggleMenu = () => setIsOpened(!isOpened);
+
+  const toggleMenu = () => {
+    isOpened ? document.body.classList.remove('overflow-hidden') : document.body.classList.add('overflow-hidden');
+    setIsOpened(!isOpened);
+  }
 
   return (
     <>

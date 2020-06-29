@@ -13,6 +13,10 @@ $sides: (top, bottom, left, right);
   position: absolute;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 @each $name, $breakpoint in $breakpoints {
   .d-none-#{$name} {
     @include respond-to($breakpoint) {
