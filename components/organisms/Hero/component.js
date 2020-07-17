@@ -1,15 +1,29 @@
+import styled from 'styled-components';
+
+import HeroTitle from 'components/atoms/HeroTitle';
+import HeroSubtitle from 'components/atoms/HeroSubtitle';
+import Mouse from 'components/atoms/Mouse';
+
+const StyledHero = styled.section`
+  height: 650px;
+  background: url(https://picsum.photos/1440/658) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
 const Hero = () => (
-  <section className="hero">
-    <h1 className="hero__header">
+  <StyledHero>
+    <HeroTitle>
       Oxygen
-      </h1>
-    <p className="hero__subtitle">
+    </HeroTitle>
+    <HeroSubtitle>
       Starter UI kit
-      </p>
-    <div className="mouse">
-      <div className="mouse__wheel" />
-    </div>
-  </section>
+    </HeroSubtitle>
+    <Mouse />
+  </StyledHero>
 );
 
 export default Hero;

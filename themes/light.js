@@ -17,4 +17,11 @@ export default {
 
     blue500: '#00B2A0',
   },
+  breakpoints: {
+    xs: '320px',
+    sm: '524px',
+    md: '768px',
+    lg: '1024px',
+    xl: '1440px',
+  },
 };
