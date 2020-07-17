@@ -1,13 +1,30 @@
+import styled from 'styled-components';
+
+import Heading from 'components/atoms/Heading';
+import VisionImage from 'components/atoms/VisionImage';
+import VisionContent from 'components/atoms/VisionContent';
+
+const StyledVision = styled.section`
+  display: flex;
+  background: ${props => props.theme.colors.gray100};
+  min-height: 840px;
+  flex-direction: column;
+
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
+    flex-direction: row;
+  }
+`;
+
 const Vision = () => (
-  <section className="vision">
-    <img className="vision__image" src="https://picsum.photos/1400" alt="" />
-    <div className="vision__content">
-      <h2 className="main-heading">
+  <StyledVision>
+    <VisionImage src="https://picsum.photos/1400" alt="" />
+    <VisionContent>
+      <Heading>
         Let’s make
         <br />
         magic.
-      </h2>
-      <p className="vision__description">
+      </Heading>
+      <p className="mt-55">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero veniam odio itaque. Molestiae aut dicta accusantium
         quod, modi ad alias enim dolor delectus iusto! Inventore tempora labore nobis doloribus optio nulla sit corrupti
         nostrum, tempore debitis pariatur minus maiores velit, autem ex eum distinctio error fugit. Itaque voluptatum quam
@@ -20,8 +37,8 @@ const Vision = () => (
         repellendus iste culpa! Voluptatibus quam ipsum nisi odit deserunt qui, consectetur ducimus, quis officia quaerat
         sapiente dolores, ad libero! Tenetur provident, omnis.
       </p>
-    </div>
-  </section>
+    </VisionContent>
+  </StyledVision>
 );
 
 export default Vision;

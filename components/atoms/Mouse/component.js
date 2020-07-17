@@ -5,7 +5,7 @@ const StyledMouse = styled.div `
   height: 43px;
   border: 2px solid white;
   border-radius: 100px;
-  margin-top: 180px;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
 

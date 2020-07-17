@@ -16,7 +16,7 @@ const StyledAboutUs = styled.section`
     margin-bottom: 50px;
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
     padding: 135px;
   }
 

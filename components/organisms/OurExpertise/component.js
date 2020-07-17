@@ -16,7 +16,7 @@ const StyledOurExpertise = styled.section`
   box-sizing: border-box;
   padding: 50px;
 
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
+  @media (min-width: ${props => props.theme.breakpoints.lg}) {
     padding: 135px;
   }
 `;
