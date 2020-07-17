@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import Logo from 'components/molecules/Logo';
+import Logo from 'components/atoms/Logo';
 import Navigation from 'components/molecules/Navigation';
 import MobileNavigation from 'components/molecules/MobileNavigation';
 
