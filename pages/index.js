@@ -20,7 +20,7 @@ const Index = () => (
   <>
     <Head>
       <title>
-        Page name - Page description - Website
+        Page name | Page description | Website
       </title>
     </Head>
     <Header />
@@ -29,6 +29,7 @@ const Index = () => (
     <OurExpertise />
     <Vision />
     <Portfolio />
+    {/* To rewrite */}
     <Testimonial />
     <Video />
     <Stats />
