@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledWideButton = styled.button`
+const WideButton = styled.button`
   margin-top: 50px;
   width: 100%;
   min-height: 100px;
@@ -20,11 +20,5 @@ const StyledWideButton = styled.button`
     transition: all 0.3s;
   }
 `;
-
-const WideButton = ({ children }) => (
-  <StyledWideButton>
-    {children}
-  </StyledWideButton>
-);
 
 export default WideButton;

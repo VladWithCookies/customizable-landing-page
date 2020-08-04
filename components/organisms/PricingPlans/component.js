@@ -1,119 +1,72 @@
+import styled from 'styled-components';
+
+import Heading from 'components/atoms/Heading';
+import PricingPlan from 'components/molecules/PricingPlan';
+
+const StyledPricingPlans = styled.section`
+  min-height: 930px;
+  padding: 50px;
+  background-color: ${props => props.theme.colors.gray100};
+
+  @media (min-width: ${props => props.theme.breakpoints.md}) {
+    padding: 135px;
+  }
+
+  > div {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    color: ${props => props.theme.colors.gray900};
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: ${props => props.theme.breakpoints.lg}) {
+      flex-direction: row;
+    }
+  }
+`;
+
 const PricingPlans = () => (
-  <section className="pricing-plans">
-    <h2 className="main-heading">
+  <StyledPricingPlans>
+    <Heading>
       Pricing Plans
-    </h2>
-    <div className="pricing-plans__items">
-      <div className="pricing-plans__plan-card">
-        <p className="pricing-plans__plan-type m-0">
-          Basic
-        </p>
-        <p className="pricing-plans__plan-price">
-          <span className="pricing-plans__plan-price-currency">
-            $
-          </span>
-          <span className="pricing-plans__plan-price-value">
-            29
-          </span>
-          <span className="pricing-plans__plan-duration">
-            / mo
-          </span>
-        </p>
-        <ul className="pricing-plans__plan-services">
-          <li className="pricing-plans__plan-services-item">
-            1 Logo Design
-          </li>
-          <li className="pricing-plans__plan-services-item">
-            1 Website Design
-          </li>
-          <li className="pricing-plans__plan-services-item">
-            1 Domain Free
-          </li>
-          <li className="pricing-plans__plan-services-item">
-            3 Month License
-          </li>
-          <li className="pricing-plans__plan-services-item">
-            1 GB Storage
-          </li>
-        </ul>
-        <a href="#" className="pricing-plans__choose-plan-link">
-          Choose plan
-        </a>
-      </div>
-      <div className="pricing-plans__plan-card">
-        <p className="pricing-plans__plan-type m-0">
-          Starter
-        </p>
-        <p className="pricing-plans__plan-price">
-          <span className="pricing-plans__plan-price-currency">
-            $
-          </span>
-          <span className="pricing-plans__plan-price-value">
-            50
-          </span>
-          <span className="pricing-plans__plan-duration">
-            / mo
-          </span>
-        </p>
-        <ul className="pricing-plans__plan-services">
-          <li className="pricing-plans__plan-services-item">
-            2 Logo Design
-          </li>
-          <li className="pricing-plans__plan-services-item">
-            2 Website Design
-          </li>
-          <li className="pricing-plans__plan-services-item">
-            1 Domain Free
-          </li>
-          <li className="pricing-plans__plan-services-item">
-            6 Month License
-          </li>
-          <li className="pricing-plans__plan-services-item">
-            1 GB Storage
-          </li>
-        </ul>
-        <a href="#" className="pricing-plans__choose-plan-link">
-          Choose plan
-        </a>
-      </div>
-      <div className="pricing-plans__plan-card">
-        <p className="pricing-plans__plan-type m-0">
-          Professional
-        </p>
-        <p className="pricing-plans__plan-price">
-          <span className="pricing-plans__plan-price-currency">
-            $
-          </span>
-          <span className="pricing-plans__plan-price-value">
-            70
-          </span>
-          <span className="pricing-plans__plan-duration">
-            / mo
-          </span>
-        </p>
-        <ul className="pricing-plans__plan-services">
-          <li className="pricing-plans__plan-services-item">
-            3 Logo Design
-          </li>
-          <li className="pricing-plans__plan-services-item">
-            3 Website Design
-          </li>
-          <li className="pricing-plans__plan-services-item">
-            2 Domain Free
-          </li>
-          <li className="pricing-plans__plan-services-item">
-            12 Month License
-          </li>
-          <li className="pricing-plans__plan-services-item">
-            2 GB Storage
-          </li>
-        </ul>
-        <a href="#" className="pricing-plans__choose-plan-link">
-          Choose plan
-        </a>
-      </div>
+    </Heading>
+    <div>
+      <PricingPlan
+        name="Basic"
+        price={29}
+        features={[
+          '1 Logo Design',
+          '1 Website Design',
+          '1 Domain Free',
+          '3 Month License',
+          '1 GB Storage',
+        ]}
+      />
+      <PricingPlan
+        name="Starter"
+        price={50}
+        features={[
+          '2 Logo Design',
+          '2 Website Design',
+          '1 Domain Free',
+          '6 Month License',
+          '1 GB Storage',
+        ]}
+      />
+      <PricingPlan
+        name="Professional"
+        price={70}
+        features={[
+          '3 Logo Design',
+          '3 Website Design',
+          '2 Domain Free',
+          '12 Month License',
+          '2 GB Storage',
+        ]}
+      />
     </div>
-  </section>
+  </StyledPricingPlans>
 );
 
 export default PricingPlans;

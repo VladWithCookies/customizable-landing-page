@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledHeroTitle = styled.p`
+const HeroTitle = styled.p`
   margin-top: 200px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -13,11 +13,5 @@ const StyledHeroTitle = styled.p`
     font-size: 100px;
   }
 `;
-
-const HeroTitle = ({ children }) => (
-  <StyledHeroTitle>
-    {children}
-  </StyledHeroTitle>
-);
 
 export default HeroTitle;

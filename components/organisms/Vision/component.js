@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 import Heading from 'components/atoms/Heading';
 import VisionImage from 'components/atoms/VisionImage';
-import VisionContent from 'components/atoms/VisionContent';
 
 const StyledVision = styled.section`
   display: flex;
@@ -13,12 +12,21 @@ const StyledVision = styled.section`
   @media (min-width: ${props => props.theme.breakpoints.lg}) {
     flex-direction: row;
   }
+
+  div {
+    flex-grow: 1;
+    padding: 50px;
+
+    @media (min-width: ${props => props.theme.breakpoints.xl}) {
+      padding: 135px;
+    }
+  }
 `;
 
 const Vision = () => (
   <StyledVision>
     <VisionImage src="https://picsum.photos/1400" alt="" />
-    <VisionContent>
+    <div>
       <Heading>
         Let’s make
         <br />
@@ -37,7 +45,7 @@ const Vision = () => (
         repellendus iste culpa! Voluptatibus quam ipsum nisi odit deserunt qui, consectetur ducimus, quis officia quaerat
         sapiente dolores, ad libero! Tenetur provident, omnis.
       </p>
-    </VisionContent>
+    </div>
   </StyledVision>
 );
 

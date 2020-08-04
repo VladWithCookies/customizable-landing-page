@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledNavigationLink = styled.a`
+const NavigationLink = styled.a`
   margin-left: 50px;
   padding: 10px;
   text-decoration: none;
@@ -10,11 +10,5 @@ const StyledNavigationLink = styled.a`
     border-bottom: 2px solid ${props => props.theme.colors.accent};
   }
 `;
-
-const NavigationLink = ({ href, children }) => (
-  <StyledNavigationLink href={href}>
-    {children}
-  </StyledNavigationLink>
-);
 
 export default NavigationLink;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyleHeroSubtitle = styled.p`
+const HeroSubtitle = styled.p`
   margin-top: 20px;
   font-family: 'Montserrat', sans-serif;
   color: ${props => props.theme.colors.accent};
@@ -8,11 +8,5 @@ const StyleHeroSubtitle = styled.p`
   font-weight: 700;
   font-size: 16px;
 `;
-
-const HeroSubtitle = ({ children }) => (
-  <StyleHeroSubtitle>
-    {children}
-  </StyleHeroSubtitle>
-);
 
 export default HeroSubtitle;

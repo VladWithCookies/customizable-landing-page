@@ -15,8 +15,8 @@ const StyledPortfolioMenuItem = styled.li`
   }
 
   ${props => props.active && css`
-    margin-bottom: 2px;
     border-bottom: 2px solid ${props => props.theme.colors.accent};
+    margin-bottom: 0;
   `}
 
   &:hover, &:focus {

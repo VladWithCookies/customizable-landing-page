@@ -7,11 +7,10 @@ const StyledFlatButton = styled.button`
   width: fit-content;
 `;
 
-const FlatButton = ({ onClick, children, className }) => (
+const FlatButton = ({ children, ...props }) => (
   <StyledFlatButton
     type="button"
-    onClick={onClick}
-    className={className}
+    {...props}
   >
     {children}
   </StyledFlatButton>

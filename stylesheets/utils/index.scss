@@ -19,7 +19,7 @@ $sides: (top, bottom, left, right);
 
 @each $name, $breakpoint in $breakpoints {
   .d-none-#{$name} {
-    @include respond-to($breakpoint) {
+    @media (min-width: $breakpoint) {
       display: none;
     }
   }
@@ -27,7 +27,7 @@ $sides: (top, bottom, left, right);
   .d-block-#{$name} {
     display: none;
 
-    @include respond-to($breakpoint) {
+    @media (min-width: $breakpoint) {
       display: block;
     }
   }

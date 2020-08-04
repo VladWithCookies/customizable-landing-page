@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledPortfolioMenu = styled.ul`
+const PortfolioMenu = styled.ul`
   list-style-type: none;
   font-weight: 600;
   font-size: 12px;
@@ -16,11 +16,5 @@ const StyledPortfolioMenu = styled.ul`
     margin-top: 0;
   }
 `;
-
-const PortfolioMenu = ({ children }) => (
-  <StyledPortfolioMenu>
-    {children}
-  </StyledPortfolioMenu>
-);
 
 export default PortfolioMenu;

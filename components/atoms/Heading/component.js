@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledHeading = styled.h2`
+const Heading = styled.h2`
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -25,11 +25,5 @@ const StyledHeading = styled.h2`
     height: 4px;
   }
 `;
-
-const Heading = ({ children }) => (
-  <StyledHeading>
-    {children}
-  </StyledHeading>
-);
 
 export default Heading;

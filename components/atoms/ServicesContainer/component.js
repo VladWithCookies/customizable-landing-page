@@ -1,8 +1,6 @@
-const { Children } = require("react");
-
 import styled from 'styled-components';
 
-const StyledServicesContainer = styled.div`
+const ServicesContainer = styled.div`
   display: flex;
   padding: 0 5px;
   flex-direction: column;
@@ -12,11 +10,5 @@ const StyledServicesContainer = styled.div`
     flex-direction: row;
   }
 `;
-
-const ServicesContainer = ({ children }) => (
-  <StyledServicesContainer>
-    {children}
-  </StyledServicesContainer>
-);
 
 export default ServicesContainer;

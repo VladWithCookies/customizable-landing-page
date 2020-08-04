@@ -29,7 +29,6 @@ const Index = () => (
     <OurExpertise />
     <Vision />
     <Portfolio />
-    {/* To rewrite */}
     <Testimonial />
     <Video />
     <Stats />

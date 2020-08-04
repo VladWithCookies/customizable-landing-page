@@ -1,38 +1,59 @@
+import styled from 'styled-components';
+
+import StatsValue from 'components/atoms/StatsValue';
+import StatsTitle from 'components/atoms/StatsTitle';
+
+const StyledStats = styled.section`
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 35px;
+  box-sizing: border-box;
+  text-align: center;
+
+  @media (min-width: ${props => props.theme.breakpoints.sm}) {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-around;
+  }
+`;
+
 const Stats = () => (
-  <section className="stats">
+  <StyledStats>
     <div>
-      <p className="stats__value">
+      <StatsValue>
         305
-      </p>
-      <p className="stats__title">
+      </StatsValue>
+      <StatsTitle>
         Web Designs
-      </p>
+      </StatsTitle>
     </div>
     <div>
-      <p className="stats__value">
+      <StatsValue>
         220
-      </p>
-      <p className="stats__title">
+      </StatsValue>
+      <StatsTitle>
         Logo Designs
-      </p>
+      </StatsTitle>
     </div>
     <div>
-      <p className="stats__value">
+      <StatsValue>
         52
-      </p>
-      <p className="stats__title">
+      </StatsValue>
+      <StatsTitle>
         Print Designs
-      </p>
+      </StatsTitle>
     </div>
     <div>
-      <p className="stats__value">
+      <StatsValue>
         88
-      </p>
-      <p className="stats__title">
+      </StatsValue>
+      <StatsTitle>
         Mobile Apps
-      </p>
+      </StatsTitle>
     </div>
-  </section>
+  </StyledStats>
 );
 
 export default Stats;
