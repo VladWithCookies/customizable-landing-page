@@ -11,6 +11,7 @@ const StyledTestimonial = styled.section`
   font-weight: 300;
   padding-top: 130px;
   box-sizing: border-box;
+  background-color: ${props => props.theme.colors.background1};
 `;
 
 const Testimonial = () => (

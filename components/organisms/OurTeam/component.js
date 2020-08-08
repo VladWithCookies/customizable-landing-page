@@ -7,6 +7,7 @@ const StyledOurTeam = styled.section`
   min-height: 1000px;
   padding: 50px;
   box-sizing: border-box;
+  background-color: ${props => props.theme.colors.background1};
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding: 135px;

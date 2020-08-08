@@ -5,7 +5,7 @@ const StyledLogo = styled.img`
   object-fit: contain;
 
   &:focus {
-    border: 2px solid ${props => props.theme.colors.accent};
+    border: 2px solid ${props => props.theme.colors.accent1};
   }
 `;
 

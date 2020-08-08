@@ -6,7 +6,7 @@ const StyledPortfolioMenuItem = styled.li`
 
   a {
     padding: 10px;
-    color: ${props => props.theme.colors.gray825};
+    color: ${props => props.theme.colors.text4};
     text-decoration: none;
   }
 
@@ -15,12 +15,12 @@ const StyledPortfolioMenuItem = styled.li`
   }
 
   ${props => props.active && css`
-    border-bottom: 2px solid ${props => props.theme.colors.accent};
+    border-bottom: 2px solid ${props => props.theme.colors.accent1};
     margin-bottom: 0;
   `}
 
   &:hover, &:focus {
-    border-bottom: 2px solid ${props => props.theme.colors.accent};
+    border-bottom: 2px solid ${props => props.theme.colors.accent1};
     margin-bottom: 0;
   }
 `;

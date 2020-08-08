@@ -8,6 +8,7 @@ const StyledPartners = styled.section`
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  background-color: ${props => props.theme.colors.background1};
 `;
 
 const Partners = () => (

@@ -15,6 +15,7 @@ const StyledOurExpertise = styled.section`
   min-height: 870px;
   box-sizing: border-box;
   padding: 50px;
+  background-color: ${props => props.theme.colors.background1};
 
   @media (min-width: ${props => props.theme.breakpoints.lg}) {
     padding: 135px;

@@ -5,13 +5,13 @@ const StyledAddress = styled.address`
   flex-direction: column;
   align-items: center;
   line-height: 32px;
-  color: ${props => props.theme.colors.gray190};
+  color: ${props => props.theme.colors.text6};
   font-style: normal;
   margin-top: 65px;
 
   a {
     text-decoration: none;
-    color: ${props => props.theme.colors.gray190};
+    color: ${props => props.theme.colors.text6};
   }
 `;
 

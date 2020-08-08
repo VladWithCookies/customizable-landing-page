@@ -6,7 +6,7 @@ import PricingPlan from 'components/molecules/PricingPlan';
 const StyledPricingPlans = styled.section`
   min-height: 930px;
   padding: 50px;
-  background-color: ${props => props.theme.colors.gray100};
+  background-color: ${props => props.theme.colors.background6};
 
   @media (min-width: ${props => props.theme.breakpoints.md}) {
     padding: 135px;
@@ -16,7 +16,7 @@ const StyledPricingPlans = styled.section`
     margin-top: 100px;
     display: flex;
     justify-content: center;
-    color: ${props => props.theme.colors.gray900};
+    color: ${props => props.theme.colors.text1};
     flex-direction: column;
     align-items: center;
 

@@ -1,11 +1,29 @@
 import { ThemeProvider } from 'styled-components';
 
-import lightTheme from 'themes/light';
+import { useState, useEffect } from 'react';
 
-const App = ({ Component, pageProps }) => (
-  <ThemeProvider theme={lightTheme}>
-    <Component {...pageProps} />
-  </ThemeProvider>
-);
+import lightTheme from 'themes/light';
+import darkTheme from 'themes/dark';
+
+const App = ({ Component, pageProps }) => {
+  const [theme, setTheme] = useState(lightTheme);
+
+  const onKeyDown = (event) => {
+    if (event.keyCode === 76) setTheme(lightTheme);
+    if (event.keyCode === 68) setTheme(darkTheme);
+  }
+
+  useEffect(() => {
+    window.addEventListener('keydown', onKeyDown);
+
+    return () => window.removeEventListener('keydown', handleScroll);
+  }, []);
+
+  return (
+    <ThemeProvider theme={theme}>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  );
+};
 
 export default App;

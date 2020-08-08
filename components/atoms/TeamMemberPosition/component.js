@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const TeamMemberPosition = styled.p`
-  color: ${props => props.theme.colors.gray175};
+  color: ${props => props.theme.colors.text8};
   font-weight: 300;
   font-size: 12px;
   line-height: 16px;

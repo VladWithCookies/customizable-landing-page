@@ -5,8 +5,8 @@ const StyledCopyright = styled.small`
   align-items: center;
   justify-content: center;
   min-height: 100px;
-  background-color: ${props => props.theme.colors.gray835};
-  color: ${props => props.theme.colors.gray175};
+  background-color: ${props => props.theme.colors.background2};
+  color: ${props => props.theme.colors.text8};
   font-size: 12px;
   line-height: 16px;
 `;

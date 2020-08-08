@@ -9,7 +9,7 @@ const StyledProgress = styled.div`
   font-size: 11px;
   line-height: 20px;
   letter-spacing: 1px;
-  color: ${props => props.theme.colors.gray850};
+  color: ${props => props.theme.colors.text2};
 `;
 
 const Progress = ({ title, value }) => (

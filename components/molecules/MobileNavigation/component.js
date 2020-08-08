@@ -14,7 +14,7 @@ const StyledMobileNavigation = styled.nav`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: ${props => props.theme.colors.background1};
   transition: transform 0.3s linear;
   font-weight: 700;
   font-size: 32px;

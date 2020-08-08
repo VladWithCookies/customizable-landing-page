@@ -5,7 +5,7 @@ const Heading = styled.h2`
   font-weight: 700;
   font-size: 40px;
   line-height: 75px;
-  color: ${props => props.theme.colors.gray900};
+  color: ${props => props.theme.colors.text1};
   letter-spacing: -1.65px;
   position: relative;
   margin: 0;
@@ -20,7 +20,7 @@ const Heading = styled.h2`
     position: absolute;
     bottom: -14px;
     display: block;
-    background-color: ${props => props.theme.colors.accent};
+    background-color: ${props => props.theme.colors.accent1};
     width: 60px;
     height: 4px;
   }

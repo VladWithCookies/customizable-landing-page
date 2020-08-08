@@ -6,7 +6,7 @@ import ContactInfo from 'components/molecules/ContactInfo';
 const StyledFooter = styled.footer`
   display: flex;
   flex-direction: column;
-  color: ${props => props.theme.colors.gray190};
+  color: ${props => props.theme.colors.text6};
 `;
 
 const Footer = () => (

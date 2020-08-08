@@ -13,6 +13,7 @@ const StyledHeader = styled.header`
   align-items: center;
   padding: 0 50px;
   font-family: 'Raleway', sans-serif;
+  background-color: ${props => props.theme.colors.background1};
 `;
 
 const Header = () => (

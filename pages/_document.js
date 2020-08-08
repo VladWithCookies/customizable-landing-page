@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 300;
     font-size: 14px;
     line-height: 24px;
-    color: ${props => props.theme.colors.gray800};
+    color: ${props => props.theme.colors.text5};
   }
 
   h1, body, figure {

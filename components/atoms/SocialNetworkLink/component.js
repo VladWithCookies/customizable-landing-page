@@ -9,7 +9,7 @@ const SocialNetworkLink = styled.a`
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
-  color: white;
+  color: ${props => props.theme.colors.text9};
 `;
 
 export default SocialNetworkLink;

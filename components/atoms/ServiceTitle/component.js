@@ -6,7 +6,7 @@ const ServiceTitle = styled.h3`
   line-height: 20px;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: ${props => props.theme.colors.gray825};
+  color: ${props => props.theme.colors.text4};
 `;
 
 export default ServiceTitle;

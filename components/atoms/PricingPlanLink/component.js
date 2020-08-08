@@ -8,7 +8,7 @@ const PricingPlanLink = styled.a`
   text-decoration: none;
 
   &:visited {
-    color: ${props => props.theme.colors.gray800};
+    color: ${props => props.theme.colors.text3};
   }
 `;
 

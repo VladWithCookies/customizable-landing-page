@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const StyledMouse = styled.div `
   width: 26px;
   height: 43px;
-  border: 2px solid white;
+  border: 2px solid ${props => props.theme.colors.background1};
   border-radius: 100px;
   margin-top: 80px;
   display: flex;
@@ -12,7 +12,7 @@ const StyledMouse = styled.div `
   div {
     width: 6px;
     height: 6px;
-    background-color: white;
+    background-color: ${props => props.theme.colors.background1};
     border-radius: 50%;
     margin-top: 8px;
   }

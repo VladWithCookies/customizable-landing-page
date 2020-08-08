@@ -6,6 +6,7 @@ import WideButton from 'components/atoms/WideButton';
 
 const StyledPortfolio = styled.section`
   min-height: 1420px;
+  background-color: ${props => props.theme.colors.background1};
 `;
 
 const Portfolio = () => (

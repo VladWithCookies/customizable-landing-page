@@ -7,7 +7,7 @@ const StyledFooterLogo = styled.div`
   justify-content: center;
   min-height: 70px;
   width: 150px;
-  border-bottom: 2px solid ${props => props.theme.colors.accent};
+  border-bottom: 2px solid ${props => props.theme.colors.accent1};
 `;
 
 const FooterLogo = () => (

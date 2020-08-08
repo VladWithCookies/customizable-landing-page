@@ -8,7 +8,7 @@ import PricingPlanFeatures from 'components/molecules/PricingPlanFeatures';
 const StyledPricingPlans = styled.div`
   width: 100%;
   height: 500px;
-  background-color: white;
+  background-color: ${props => props.theme.colors.background1};
   padding: 25px 25px 50px 25px;
   text-align: center;
   margin-right: 0px;

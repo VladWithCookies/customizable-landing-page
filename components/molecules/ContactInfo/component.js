@@ -9,7 +9,7 @@ const StyledContactInfo = styled.div`
   box-sizing: border-box;
   padding-top: 110px;
   min-height: 550px;
-  background-color: ${props => props.theme.colors.gray800};
+  background-color: ${props => props.theme.colors.background4};
   display: flex;
   flex-direction: column;
   align-items: center;

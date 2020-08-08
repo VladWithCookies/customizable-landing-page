@@ -4,7 +4,7 @@ import Heading from 'components/atoms/Heading';
 
 const StyledAboutUs = styled.section`
   display: flex;
-  background-color: ${props => props.theme.colors.gray100};
+  background-color: ${props => props.theme.colors.background6};
   min-height: 500px;
   padding: 50px;
   box-sizing: border-box;

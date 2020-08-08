@@ -5,7 +5,7 @@ const CarouselPaginationButton = styled.button`
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: ${props => props.theme.colors.gray900};
+  background-color: ${props => props.theme.colors.background2};
   margin-right: 10px;
   opacity: 0.4;
   cursor: pointer;

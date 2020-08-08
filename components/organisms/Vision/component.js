@@ -5,7 +5,7 @@ import VisionImage from 'components/atoms/VisionImage';
 
 const StyledVision = styled.section`
   display: flex;
-  background: ${props => props.theme.colors.gray100};
+  background: ${props => props.theme.colors.background6};
   min-height: 840px;
   flex-direction: column;
 

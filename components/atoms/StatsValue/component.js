@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StatsValue = styled.p`
   margin: 0;
-  color: ${props => props.theme.colors.gray900};
+  color: ${props => props.theme.colors.text1};
   font-family: 'Montserrat', sans-serif;
   font-size: 60px;
   font-weight: 700;

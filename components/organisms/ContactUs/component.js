@@ -8,6 +8,7 @@ const StyledContactUs = styled.section`
   display: flex;
   min-height: 900px;
   flex-direction: column;
+  background-color: ${props => props.theme.colors.background1};
 
   @media (min-width: ${props => props.theme.breakpoints.lg}) {
     flex-direction: row;

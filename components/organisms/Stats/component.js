@@ -11,6 +11,7 @@ const StyledStats = styled.section`
   padding: 35px;
   box-sizing: border-box;
   text-align: center;
+  background-color: ${props => props.theme.colors.background1};
 
   @media (min-width: ${props => props.theme.breakpoints.sm}) {
     flex-direction: row;

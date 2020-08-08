@@ -8,7 +8,7 @@ import CarouselSlide from 'components/molecules/CarouselSlide';
 const StyledCarousel = styled.section`
   min-height: 840px;
   display: flex;
-  background-color: ${props => props.theme.colors.gray100};
+  background-color: ${props => props.theme.colors.background6};
   align-items: center;
 
   @media (min-width: ${props => props.theme.breakpoints.lg}) {

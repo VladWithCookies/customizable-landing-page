@@ -29,7 +29,7 @@ const StyledGalleryImage = styled.figure`
     cursor: pointer;
 
     a {
-      color: white;
+      color: ${props => props.theme.colors.text9};
       text-decoration: none;
     }
 
