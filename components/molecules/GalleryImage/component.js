@@ -35,7 +35,6 @@ const StyledGalleryImage = styled.figure`
 
     &:hover, &:focus {
       opacity: 1;
-      transition: all 0.3s;
       background: rgba(0, 0, 0, 0.7);
     }
   }

@@ -3,6 +3,8 @@ import styled, { css } from 'styled-components';
 const StyledPortfolioMenuItem = styled.li`
   width: fit-content;
   margin-bottom: 2px;
+  transition: border-color 0.3s;
+  border-bottom: 2px solid transparent;
 
   a {
     padding: 10px;
@@ -16,12 +18,10 @@ const StyledPortfolioMenuItem = styled.li`
 
   ${props => props.active && css`
     border-bottom: 2px solid ${props => props.theme.colors.accent1};
-    margin-bottom: 0;
   `}
 
   &:hover, &:focus {
     border-bottom: 2px solid ${props => props.theme.colors.accent1};
-    margin-bottom: 0;
   }
 `;
 

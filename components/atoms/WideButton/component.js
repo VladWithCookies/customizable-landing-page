@@ -17,7 +17,6 @@ const WideButton = styled.button`
 
   &:focus, &:hover {
     background-color: ${props => props.theme.colors.background5};
-    transition: all 0.3s;
   }
 `;
 
