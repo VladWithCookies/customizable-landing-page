@@ -18,11 +18,11 @@ const StyledCarousel = styled.section`
 
 const Carousel = () => (
   <StyledCarousel>
-    <FlatButton aria-label="Go to previous image" className="d-none d-block-lg">
+    <FlatButton aria-label="Go to previous image" className="d-block-lg">
       <ArrowLeftIcon />
     </FlatButton>
     <CarouselSlide />
-    <FlatButton aria-label="Go to next image" className="d-none d-block-lg">
+    <FlatButton aria-label="Go to next image" className="d-block-lg">
       <ArrowRightIcon />
     </FlatButton>
   </StyledCarousel>
